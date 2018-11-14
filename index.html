@@ -10,30 +10,31 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Arapey" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <title>Hello, world!</title>
 </head>
 
 <body class="container my-auto">
     <script src="./js/countdown.min.js"></script>
-    <div id="fade" class="w-100">
-        <h1 id="since" class="text-light align-middle w-100 text-center"></h1>
+    <div id="fade" style="width: 400px;" class="mx-auto">
         <h1 id="left" class="text-light align-middle w-100 text-center"></h1>
+        <p class="text-light w-100 text-center since"><small id="since"></small></p>
     </div>
     <script>
         let since = document.getElementById("since");
         let timesince = setInterval(
             function () {
-                since.innerHTML = countdown(null, new Date("September 8, 2018 12"),
-                    countdown.DAYS | countdown.HOURS).toString() + ' have passed';
+                since.innerHTML = 'exactly ' + countdown(null, new Date("December 21, 2018 12")).toString();
             }, 1000);
 
         let left = document.getElementById("left");
         let timeleft = setInterval(
             function () {
                 left.innerHTML = countdown(null, new Date("December 21, 2018 12"),
-                    countdown.DAYS | countdown.HOURS).toString() + ' left';
+                    countdown.DAYS | countdown.HOURS).toString();
             }, 1000);
 
 

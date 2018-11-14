@@ -22,13 +22,28 @@ html, body {
     }
   }
 
-  #fade h1 {
+  h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 112px;
+  }
+
+  #fade {
     animation: fadein 10s;
     -moz-animation: fadein 10s; /* Firefox */
     -webkit-animation: fadein 10s; /* Safari and Chrome */
     -o-animation: fadein 10s; /* Opera */
-    font-family: 'Arapey', serif;
+    
 }
+
+.inline-icon {
+    vertical-align: text-bottom;
+    font-size: 18px !important;
+ }
+
+.since {
+    font-family: 'Open Sans', sans-serif;
+}
+
 @keyframes fadein {
     from {
         opacity:0;
