@@ -1,0 +1,83 @@
+html, body {
+    height:100%;
+    background-color: #E73C3E;
+    animation-name: color;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
+  body {
+    display:flex;
+    align-items:center;
+  }
+  
+  @keyframes color {
+    0% {
+      background-color: #222;
+    }
+    50% {
+        background-color: #E73C3E;
+    }
+    100% {
+      background-color: #222;
+    }
+  }
+
+  #fade h1 {
+    animation: fadein 10s;
+    -moz-animation: fadein 10s; /* Firefox */
+    -webkit-animation: fadein 10s; /* Safari and Chrome */
+    -o-animation: fadein 10s; /* Opera */
+    font-family: 'Arapey', serif;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+#diamond-shield {
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-bottom: 20px solid white;
+    position: relative;
+    top: -50px;
+  }
+  #diamond-shield:after {
+    content: '';
+    position: absolute;
+    left: -50px;
+    top: 20px;
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-top: 70px solid white;
+  }
