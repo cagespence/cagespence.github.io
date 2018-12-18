@@ -85,9 +85,21 @@ function loop() {
           }
         }*/
 
-
         ctx.beginPath();
-        ctx.arc(flakeA.x, flakeA.y, flakeA.weight, 0, 2 * Math.PI, false);
+        let flakeSize = 8; // larger is smaller
+        ctx.moveTo(flakeA.x + 108 / flakeSize, flakeA.y + 0.0);
+        ctx.lineTo(flakeA.x + 141 / flakeSize, flakeA.y + 70 / flakeSize);
+        ctx.lineTo(flakeA.x + 218 / flakeSize, flakeA.y + 78.3 / flakeSize);
+        ctx.lineTo(flakeA.x + 162 / flakeSize, flakeA.y + 131 / flakeSize);
+        ctx.lineTo(flakeA.x + 175 / flakeSize, flakeA.y + 205 / flakeSize);
+        ctx.lineTo(flakeA.x + 108 / flakeSize, flakeA.y + 170 / flakeSize);
+        ctx.lineTo(flakeA.x + 41.2 / flakeSize, flakeA.y + 205 / flakeSize);
+        ctx.lineTo(flakeA.x + 55 / flakeSize, flakeA.y + 131 / flakeSize);
+        ctx.lineTo(flakeA.x + 1 / flakeSize, flakeA.y + 78 / flakeSize);
+        ctx.lineTo(flakeA.x + 75 / flakeSize, flakeA.y + 68 / flakeSize);
+        ctx.lineTo(flakeA.x + 108 / flakeSize, flakeA.y + 0);
+        ctx.closePath();
+
         ctx.fillStyle = 'rgba(255, 255, 255, ' + flakeA.alpha + ')';
         ctx.fill();
 

@@ -18,26 +18,17 @@ html, body {
     -moz-animation: fadein 10s; /* Firefox */
     -webkit-animation: fadein 10s; /* Safari and Chrome */
     -o-animation: fadein 10s; /* Opera */
-    
 }
 
 @font-face {
     font-family: "Helvetica";
-    src:url("C:/Users/Cage/Documents/HowLong/cagespence.github.io/font/Helvetica-Bold.woff");
+    src:url("../font/Helvetica-Bold.woff");
 }
 
 .helvetica{
     font-family:"Helvetica";
 }
 
-.inline-icon {
-    vertical-align: text-bottom;
-    font-size: 18px !important;
- }
-
-.since {
-    font-family: 'Open Sans', sans-serif;
-}
 
 @keyframes fadein {
     from {
