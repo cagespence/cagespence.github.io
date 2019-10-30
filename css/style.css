@@ -1,6 +1,6 @@
 html, body {
     height:100%;
-    background-color: #78abec;
+    background-color: #F2A900;
     
   }
   body {
@@ -10,7 +10,7 @@ html, body {
 
   h1 {
     font-size: 72px;
-    color: rgb(82, 102, 167);
+    color: #000000;
   }
 
   #fade {
